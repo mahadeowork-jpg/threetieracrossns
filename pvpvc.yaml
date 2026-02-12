@@ -16,14 +16,6 @@ spec:
   storageClassName: local-storage
   local:
     path: /mnt/data/database
-  nodeAffinity:
-    required:
-      nodeSelectorTerms:
-      - matchExpressions:
-        - key: kubernetes.io/hostname
-          operator: In
-          values:
-          - kind-worker2
 ---
 # Sync Wave 1: PersistentVolumeClaim (created after PV)
 apiVersion: v1
