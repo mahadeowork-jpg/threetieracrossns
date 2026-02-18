@@ -4,7 +4,7 @@ metadata:
   name: threetier-app
   namespace: argocd
 spec:
-  project: myproj
+  project: dev-project
   source:
     repoURL: https://github.com/amitopenwriteup/threetieracrossns.git
     targetRevision: HEAD
